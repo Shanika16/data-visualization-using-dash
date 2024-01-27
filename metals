@@ -1,0 +1,8 @@
+import os
+
+# Get the absolute path to the directory of the script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, "precious_metals_prices_2018_2021.csv")
+
+# Read in the data
+data = pd.read_csv(file_path)
